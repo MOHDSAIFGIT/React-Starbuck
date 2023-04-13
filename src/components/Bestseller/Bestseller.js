@@ -1,5 +1,10 @@
 import React, { PureComponent } from "react";
-import './Bestseller.css'
+import BS from "../../images/Bestseller(1).jpg";
+import Drink from "../../images/Drinks(2).jpg";
+import Food from "../../images/Food(3).jpg";
+import Merchendise from "../../images/Merchandise(4).jpg";
+import coffee from "../../images/CoffeeAtHome(5).jpg";
+import readytoeat from "../../images/ReadyToEat(6).jpg";
 
 export class Bestseller extends PureComponent {
   render() {
@@ -15,7 +20,7 @@ export class Bestseller extends PureComponent {
             <div className="text-center">
               <img
                 className="rounded-circle"
-                src="images/Bestseller(1).jpg"
+                src={BS}
                 width="100px"
                 height="100px"
                 alt="image"
@@ -26,7 +31,7 @@ export class Bestseller extends PureComponent {
             <div className="text-center">
               <img
                 className="rounded-circle"
-                src="images/Drinks(2).jpg"
+                src={Drink}
                 width="100px"
                 height="100px"
                 alt="image"
@@ -37,7 +42,7 @@ export class Bestseller extends PureComponent {
             <div className="text-center">
               <img
                 className="rounded-circle"
-                src="images/Food(3).jpg"
+                src={Food}
                 width="100px"
                 height="100px"
                 alt="image"
@@ -48,7 +53,7 @@ export class Bestseller extends PureComponent {
             <div>
               <img
                 className="rounded-circle"
-                src="images/Merchandise(4).jpg"
+                src={Merchendise}
                 width="100px"
                 height="100px"
                 alt="image"
@@ -59,7 +64,7 @@ export class Bestseller extends PureComponent {
             <div className="text-center">
               <img
                 className="rounded-circle"
-                src="images/CoffeeAtHome(5).jpg"
+                src={coffee}
                 width="100px"
                 height="100px"
                 alt="image"
@@ -70,7 +75,7 @@ export class Bestseller extends PureComponent {
             <div className="text-center">
               <img
                 className="rounded-circle"
-                src="images/ReadyToEat(6).jpg"
+                src={readytoeat}
                 width="100px"
                 height="100px"
                 alt="image"
@@ -79,6 +84,9 @@ export class Bestseller extends PureComponent {
             </div>
           </div>
         </div>
+        
+
+        
       </div>
     );
   }
