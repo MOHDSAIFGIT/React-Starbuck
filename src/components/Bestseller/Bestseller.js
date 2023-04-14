@@ -7,9 +7,32 @@ import Merchendise from "../../images/Merchandise(4).jpg";
 import coffee from "../../images/CoffeeAtHome(5).jpg";
 import readytoeat from "../../images/ReadyToEat(6).jpg";
 import vegicon from "../../images/veg.svg";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 export class Bestseller extends PureComponent {
   render() {
+    // for carousel
+    const responsive = {
+      superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 5,
+      },
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 3,
+      },
+      tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2,
+      },
+      mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1,
+      },
+    };
+    // end carousel
     return (
       <div>
         <div className="row justify-content-evenly mb-5 mt-3">
@@ -98,99 +121,144 @@ export class Bestseller extends PureComponent {
             </div>
           </div>
 
-          {/* cards  */}
-          <div className="cards d-flex mt-4 mb-4 justify-content-between">
-            <div className="cards-content">
-              <div className="upper-content d-flex">
-                <div className="card-img">
-                  <img src={BS} alt="image" />
-                </div>
-                <div className="card-about">
-                  <div>
-                    <img src={vegicon} alt="veg-symbol" />
-                  </div>
-                  <div className="card-title">
-                    <h3>Java Chip Frappuccino</h3>
-                  </div>
-                  <div className="card-subtitle">
-                    <span> TALL(354 ML) </span>
-                  </div>
-                </div>
-              </div>
+          {/* carousel  */}
+          <Carousel responsive={responsive} className="carousel-section">
+            {/* cards  */}
+            {/* <div className="cards d-flex mt-4 mb-4 justify-content-between">
 
-              <div className="card-bottom d-flex mt-1">
-                <div className="card-price">
-                  <h6>₹ 351</h6>
-                </div>
-                <div className="card-add-item">
-                  <button className="text-white">Add Item</button>
-                </div>
-              </div>
-            </div>
+            {/* <!-- card-end --> 
+          </div> */}
 
-            {/* <!-- card2 --> */}
-            <div className="cards-content">
-              <div className="upper-content d-flex">
-                <div className="card-img">
-                  <img src={BS} alt="image" />
+            <div>
+              {/* card 1 */}
+              {/* Item 1 */}
+              <div className="cards-content">
+                <div className="upper-content d-flex">
+                  <div className="card-img">
+                    <img src={BS} alt="image" />
+                  </div>
+                  <div className="card-about">
+                    <div>
+                      <img src={vegicon} alt="veg-symbol" />
+                    </div>
+                    <div className="card-title">
+                      <h3>Java Chip Frappuccino</h3>
+                    </div>
+                    <div className="card-subtitle">
+                      <span> TALL(354 ML) </span>
+                    </div>
+                  </div>
                 </div>
-                <div className="card-about">
-                  <div>
-                    <img src={vegicon} alt="veg-symbol" />
-                  </div>
-                  <div className="card-title">
-                    <h3>Cold coffee</h3>
-                  </div>
-                  <div className="card-subtitle">
-                    <span> TALL(354 ML) </span>
-                  </div>
-                </div>
-              </div>
 
-              <div className="card-bottom d-flex mt-1">
-                <div className="card-price">
-                  <h6>₹ 351</h6>
-                </div>
-                <div className="card-add-item">
-                  <button className="text-white">Add Item</button>
+                <div className="card-bottom d-flex mt-1">
+                  <div className="card-price">
+                    <h6>₹ 351</h6>
+                  </div>
+                  <div className="card-add-item">
+                    <button className="text-white">Add Item</button>
+                  </div>
                 </div>
               </div>
             </div>
+            <div>
+              {/* <!-- card2  start from here--> */}
+              {/* Item 2 */}
+              <div className="cards-content">
+                <div className="upper-content d-flex">
+                  <div className="card-img">
+                    <img src={BS} alt="image" />
+                  </div>
+                  <div className="card-about">
+                    <div>
+                      <img src={vegicon} alt="veg-symbol" />
+                    </div>
+                    <div className="card-title">
+                      <h3>Cold coffee</h3>
+                    </div>
+                    <div className="card-subtitle">
+                      <span> TALL(354 ML) </span>
+                    </div>
+                  </div>
+                </div>
 
-            {/* <!-- card3 --> */}
-            <div className="cards-content">
-              <div className="upper-content d-flex">
-                <div className="card-img">
-                  <img src={BS} alt="image" />
-                </div>
-                <div className="card-about">
-                  <div>
-                    <img src={vegicon} alt="veg-symbol" />
+                <div className="card-bottom d-flex mt-1">
+                  <div className="card-price">
+                    <h6>₹ 351</h6>
                   </div>
-                  <div className="card-title">
-                    <h3>Vanilla Sweet Cream Cold Brew</h3>
+                  <div className="card-add-item">
+                    <button className="text-white">Add Item</button>
                   </div>
-                  <div className="card-subtitle">
-                    <span> TALL(354 ML) </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="card-bottom d-flex mt-1">
-                <div className="card-price">
-                  <h6>₹ 383</h6>
-                </div>
-                <div className="card-add-item">
-                  <button className="text-white">Add Item</button>
                 </div>
               </div>
             </div>
+            <div>
+              {/* <!-- card3 start from here--> */}
+              {/* Item 3 */}
+              <div className="cards-content">
+                <div className="upper-content d-flex">
+                  <div className="card-img">
+                    <img src={BS} alt="image" />
+                  </div>
+                  <div className="card-about">
+                    <div>
+                      <img src={vegicon} alt="veg-symbol" />
+                    </div>
+                    <div className="card-title">
+                      <h3>Vanilla Sweet Cream Cold Brew</h3>
+                    </div>
+                    <div className="card-subtitle">
+                      <span> TALL(354 ML) </span>
+                    </div>
+                  </div>
+                </div>
 
-            {/* <!-- card-end --> */}
-          </div>
+                <div className="card-bottom d-flex mt-1">
+                  <div className="card-price">
+                    <h6>₹ 383</h6>
+                  </div>
+                  <div className="card-add-item">
+                    <button className="text-white">Add Item</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              {/* Item 4 */}
+              {/* <!-- card3 start from here--> */}
+              <div className="cards-content">
+                <div className="upper-content d-flex">
+                  <div className="card-img">
+                    <img src={BS} alt="image" />
+                  </div>
+                  <div className="card-about">
+                    <div>
+                      <img src={vegicon} alt="veg-symbol" />
+                    </div>
+                    <div className="card-title">
+                      <h3>Vanilla Sweet Cream Cold Brew</h3>
+                    </div>
+                    <div className="card-subtitle">
+                      <span> TALL(354 ML) </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="card-bottom d-flex mt-1">
+                  <div className="card-price">
+                    <h6>₹ 383</h6>
+                  </div>
+                  <div className="card-add-item">
+                    <button className="text-white">Add Item</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Carousel>
 
           {/* br-card-end  */}
         </div>
+
+        {/* end div  */}
       </div>
     );
   }
