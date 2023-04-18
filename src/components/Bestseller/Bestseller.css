@@ -1,73 +1,71 @@
-.BR-container{
-    background-color: #edebe9;
-    padding-bottom: 60px;
-    padding-top: 30px;
+.BR-container {
+  background-color: #edebe9;
+  padding-bottom: 60px;
+  padding-top: 30px;
 }
-.br-upperSection{
-    padding-bottom: 30px;
-    padding-left: 123px;
-    padding-right: 200px;
+.br-upperSection {
+  padding-bottom: 30px;
+  padding-left: 123px;
+  padding-right: 200px;
 }
-.carousel-section{
-    padding-left: 90px;
-    padding-right: 570px;
+.carousel-section {
+  padding-left: 90px;
+  padding-right: 570px;
 }
-.br-heading h3{
-    font-weight: 700;
-    font-size: x-large;
-}
-
-.view-menu a{
-    text-decoration: none;
-    color: #167f73;
-    font-weight: 650;
-    font-size: small;
+.br-heading h3 {
+  font-weight: 700;
+  font-size: x-large;
 }
 
-.cards{
-    justify-content: space-evenly;
-}
-.cards-content{
-    border: 1px solid white;
-    width: 400px;
-    height: 150px;
-    background-color: white;
-    border-radius: 8px;
-    
+.view-menu a {
+  text-decoration: none;
+  color: #167f73;
+  font-weight: 650;
+  font-size: small;
 }
 
-.card-img img{
-    height: 78px;
-    width: 78px;
-    border-radius: 9px;
-    margin-left: 25px;
-    margin-top: 18px;
+.cards {
+  justify-content: space-evenly;
+}
+.cards-content {
+  border: 1px solid white;
+  width: 400px;
+  height: 150px;
+  background-color: white;
+  border-radius: 8px;
 }
 
-.card-about{
-    margin-top: 18px;
-    /* background-color: aqua; */
-    width: 900px;
-    height: 90px;
-}
-.card-title h3{
-    font-size: medium;
+.card-img img {
+  height: 78px;
+  width: 78px;
+  border-radius: 9px;
+  margin-left: 25px;
+  margin-top: 18px;
 }
 
-.card-subtitle span{
-    font-size: small;
+.card-about {
+  margin-top: 18px;
+  /* background-color: aqua; */
+  width: 900px;
+  height: 90px;
+}
+.card-title h3 {
+  font-size: medium;
 }
 
-.card-bottom{
-    justify-content: space-between;
-    font-size: small;
+.card-subtitle span {
+  font-size: small;
 }
-.card-price h6{
-    margin-left: 25px;
+
+.card-bottom {
+  justify-content: space-between;
+  font-size: small;
 }
-.card-add-item button{
-    background-color: #00754a;
-    border-radius: 30px;
-    margin-right: 25px;
-    
+.card-price h6 {
+  margin-left: 25px;
+}
+.card-add-item button {
+  background-color: #00754a;
+  border-radius: 30px;
+  margin-right: 25px;
 }
