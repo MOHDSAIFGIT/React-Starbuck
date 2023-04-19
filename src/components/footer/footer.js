@@ -12,42 +12,42 @@ export class Footer extends PureComponent {
     return (
       <div>
         {/* footer  */}
-        <div className="row footer text-white pt-5">
+        <div className="row footer text-white pt-5 pb-5">
           <div className="col-2">
             <div>
-              <img src={logo} alt="" />
+              <img src={logo} alt="" className="footer-logo" />
             </div>
           </div>
           <div className="col-2">
             <div>
               <h3>About Us </h3>
-              <ul>Our Heritage</ul>
-              <ul>Our company</ul>
-              <ul>Coffehouse</ul>
+              <ul className="pt-2">Our Heritage</ul>
+              <ul className="pt-2">Our company</ul>
+              <ul className="pt-2">Coffehouse</ul>
             </div>
           </div>
           <div className="col-2">
             <div>
               <h3>Responsibility</h3>
-              <ul>Community</ul>
-              <ul>Ethical Sourcing</ul>
-              <ul>Envirnment</ul>
-              <ul>Diversity</ul>
+              <ul className="pt-2">Community</ul>
+              <ul className="pt-2">Ethical Sourcing</ul>
+              <ul className="pt-2">Envirnment</ul>
+              <ul className="pt-2">Diversity</ul>
             </div>
           </div>
           <div className="col-2">
             <div>
               <h3>Quicks links</h3>
-              <ul>Delivery</ul>
-              <ul>Season Gifts</ul>
-              <ul>Careers</ul>
-              <ul>Customer Service</ul>
-              <ul>FAQs</ul>
+              <ul className="pt-2">Delivery</ul>
+              <ul className="pt-2">Season Gifts</ul>
+              <ul className="pt-2">Careers</ul>
+              <ul className="pt-2">Customer Service</ul>
+              <ul className="pt-2">FAQs</ul>
             </div>
           </div>
           <div className="col-2">
             <div>
-              <h3>Social Media</h3>
+              <h3 className="pb-2">Social Media</h3>
               <a href="#">
                 <img src={instagram} alt="Instagram" />
               </a>
@@ -67,6 +67,8 @@ export class Footer extends PureComponent {
               <img src={playstore} alt="playstore" />
             </a>
           </div>
+
+          <hr />
         </div>
 
         {/* last div  */}
