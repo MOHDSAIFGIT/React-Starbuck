@@ -69,3 +69,15 @@
   border-radius: 30px;
   margin-right: 25px;
 }
+.promo-col{
+  background-color: #066241;
+  border-radius: 10px;
+}
+.promo-container img{
+  width: 100px;
+  height: 225px;
+}
+.promo-text p,h4{
+  padding-left: 20px;
+  padding-top: 15px;
+}

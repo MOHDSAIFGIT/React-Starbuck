@@ -9,6 +9,7 @@ import readytoeat from "../../images/ReadyToEat(6).jpg";
 import vegicon from "../../images/veg.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import promo from "../../images/Group_1087_b1db5faed6.png"
 
 export class Bestseller extends PureComponent {
   render() {
@@ -35,6 +36,7 @@ export class Bestseller extends PureComponent {
     // end carousel
     return (
       <div>
+        {/* Handcrafted Curations */}
         <div className="row justify-content-evenly mb-5 mt-3">
           <div className="col-10 pt-4 pb-3">
             <div className="">
@@ -256,6 +258,22 @@ export class Bestseller extends PureComponent {
           </Carousel>
 
           {/* br-card-end  */}
+        </div>
+
+        {/* promotion-poster */}
+
+        <div className="row promo-row justify-content-evenly">
+            <div className="col-10 promo-col mt-5 mb-5">
+              <div className="promo-container d-flex text-white">
+                  <div><img src={promo} alt="group food image" /></div>
+                  <div className="promo-text">
+                      <div><p>Don't Miss Out!</p></div>
+                      <div><h4>Something Big is Brewing</h4></div>
+                      <div><p>Get ready to be vowed with our game changing new menu.</p></div>
+                  </div>
+
+              </div>
+            </div>
         </div>
 
         {/* end div  */}
