@@ -1,6 +1,6 @@
 import React from "react";
-import logo from '../../images/logo.png'
-import first from '../../images/account_thin.svg'
+import logo from "../../images/logo.png";
+import first from "../../images/account_thin.svg";
 
 function Header() {
   return (
@@ -29,7 +29,7 @@ function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#"> 
+                <a className="nav-link" href="#">
                   Gift
                 </a>
               </li>
@@ -48,7 +48,6 @@ function Header() {
                   Store
                 </a>
               </li>
-            
             </ul>
             <form className="d-flex " role="search">
               <input
@@ -57,10 +56,11 @@ function Header() {
                 placeholder="looking for something specific?"
                 aria-label="Search"
               />
-              
             </form>
 
-            <div className="user-icon"><img src={first} alt="user-icon" /></div>
+            <div className="user-icon">
+              <img src={first} alt="user-icon" />
+            </div>
           </div>
         </div>
       </nav>
