@@ -69,28 +69,29 @@
   border-radius: 30px;
   margin-right: 25px;
 }
-.promo-col{
+.promo-col {
   background-color: #066241;
   border-radius: 10px;
 }
 .promo-container {
   position: relative;
 }
-.promo-container img{
+.promo-container img {
   width: 100px;
   height: 225px;
 }
-.promo-text p,h4{
+.promo-text p,
+h4 {
   padding-left: 20px;
   padding-top: 15px;
 }
-.promo-btn{
+.promo-btn {
   position: absolute;
   bottom: 18px;
   right: 0;
   margin-right: 20px;
 }
-.promo-btn button{
+.promo-btn button {
   background-color: #ffffff;
   padding: 12px 60px;
   border-radius: 50px;
