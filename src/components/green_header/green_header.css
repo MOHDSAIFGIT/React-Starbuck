@@ -1,23 +1,23 @@
-.green-header{
-    width: 100%;
-    background-color:#1e3932;
-    height: 75px;
-    padding-left: 110px;
-    padding-right: 130px;
+.green-header {
+  width: 100%;
+  background-color: #1e3932;
+  height: 75px;
+  padding-left: 110px;
+  padding-right: 130px;
 }
 
-.green-header h5{
-    font-weight: 100;
+.green-header h5 {
+  font-weight: 100;
 }
 
-.green-header button{
-    border-radius: 50px;
-    background-color:#1e3932;
-    border-color: white;
-    color: white;
-    font-weight: 700;
-    font-size: small;
-    width: 100px;
-    height: 35px;
-    padding-bottom: 5%;
+.green-header button {
+  border-radius: 50px;
+  background-color: #1e3932;
+  border-color: white;
+  color: white;
+  font-weight: 700;
+  font-size: small;
+  width: 100px;
+  height: 35px;
+  padding-bottom: 5%;
 }
