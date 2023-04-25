@@ -31,20 +31,10 @@ export class Footer extends PureComponent {
               <h3>Responsibility</h3>
               <ul className="pt-2">Community</ul>
 
-
-
-
               <ul className="pt-2">Ethical Sourcing</ul>
 
-
-
-              
               <ul className="pt-2">Envirnment</ul>
               <ul className="pt-2">Diversity</ul>
-
-
-
-
             </div>
           </div>
           <div className="col-2">
