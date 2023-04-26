@@ -71,7 +71,6 @@ export class Footer extends PureComponent {
           </div>
 
           <hr />
-          <hr />
 
         </div>
 
