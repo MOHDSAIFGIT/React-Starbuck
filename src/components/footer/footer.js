@@ -23,7 +23,7 @@ export class Footer extends PureComponent {
               <h3>About Us </h3>
               <ul className="pt-2">Our Heritage</ul>
               <ul className="pt-2">Our company</ul>
-              <ul className="pt-2">Coffehouse</ul>
+              <ul className="pt-2">Coffeehouse</ul>
             </div>
           </div>
           <div className="col-2">
